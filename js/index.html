@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <p id="root"></p>
+    <hr />
+    <div class="field">
+        <div>
+            <p>Nama barang</p>
+            <input type="text" placeholder="Nama barang" id="nama1" />
+            <p id="errNamaBarang1"></p>
+        </div>
+        <div>
+            <p>Harga barang</p>
+            <input type="text" placeholder="Harga barang" id="harga1" />
+            <p id="errHarga1"></p>
+        </div>
+        <div>
+            <p>Qty</p>
+            <input type="text" placeholder="Qty" id="qty1" />
+            <p id="errQty1"></p>
+        </div>
+        <div>
+            <p>Diskon(%)</p>
+            <input type="text" placeholder="Diskon(%)" id="diskon1" />
+            <p class="errDiskon"></p>
+        </div>
+    </div>
+    <div class="field">
+        <div>
+            <p>Nama barang</p>
+            <input type="text" placeholder="Nama barang" id="nama" />
+            <p id="errNamaBarang"></p>
+        </div>
+        <div>
+            <p>Harga barang</p>
+            <input type="text" placeholder="Harga barang" id="harga" />
+        </div>
+        <div>
+            <p>Qty</p>
+            <input type="text" placeholder="Qty" id="qty" />
+        </div>
+        <div>
+            <p>Diskon(%)</p>
+            <input type="text" placeholder="Diskon(%)" id="diskon" />
+            <p id="errDiskon"></p>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button onclick="return hitungTotal()">Hitung</button>
+    </div>
+    <hr />
+    <div id="total"></div>
+    <div>
+        Barang yang dibeli:
+    </div>
+    <div id="listBarang"></div>
+    <div id="listBarang1"></div>
+    <div class="btn-container">
+        <button class="cash" onclick="return payCash()">Cash</button>
+    </div>
+    <div class="lunas" id="lunas">Lunas</div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

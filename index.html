@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            alert(1)
+            let x = document.forms["myForm"]["fname"].value
+            console.log(x, 'kkkkkkk');
+
+            if (x === '') {
+                alert("Nama harus diisi.");
+            } else {
+                alert("Password salah.");
+            }
+        }
+    </script>
+    <style>
+        td,
+        th,
+        tr {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .bg-img {
+            min-height: 300px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tingkatkan Karier Profesionalmu -->
+    <!-- <h1>Arkademi Upskill Week</h1>
+    <h2>Lembaga Pelatihan Resmi</h2>
+    <h3>Lembaga Pelatihan Resmi</h3>
+    Nikmati <b>diskon 50%</b> dan kursus <b>seharga 100K</b> di Arkademi Upskill Week! -->
+
+    <!-- <a href="https://arkademi.com/promo-event?section=upskill">Promo & Event</a> -->
+    <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="fname" />
+        <input type="submit" name="Submit" />
+    </form>
+    <!-- <table>
+        <thead>
+            <tr>
+                <td><strong>Nama</strong></td>
+                <td><strong>Alamat</strong></td>
+                <td><strong>No Hp</strong></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>Jakarta</td>
+                <td>0863543762547</td>
+            </tr>
+            <tr>
+                <td>Nia</td>
+                <td>Lampung</td>
+                <td>093657624</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <FORM name="myForm" onsubmit="return checkPassword()">
+        Password: <input type="text" name=" pswd " />
+        <input type="submit" value="Check Password" />
+    </FORM> -->
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg"
+        width="500" alt="bg-mirror" />
+    <hr />
+    <div class="bg-img"></div>
+</body>
+
+</html>

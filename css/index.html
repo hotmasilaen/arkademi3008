@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <style>
+        h1 {
+            color: brown;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+        .brown-box {
+            border: none;
+            padding: 15px;
+            background-color: brown;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        /* div {
+            max-width: 50px;
+        } */
+
+        button:disabled {
+            cursor: not-allowed;
+        }
+
+        .container {
+            background-image: url('https://cdn.pixabay.com/photo/2023/04/13/22/20/hd-wallpaper-7923541_1280.jpg');
+            min-height: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .sub-container {
+            padding: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blueviolet;
+            width: fit-content;
+            border-radius: 10px;
+            margin-top: 30px;
+
+        }
+
+        .card {
+            border: 1px solid black;
+            margin-top: 20px;
+            width: 300px;
+            padding: 20px;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            /* transition: width 2s, height 2s; */
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+            animation-name: animationBg;
+            animation-timeline: auto;
+            animation-range-start: normal;
+
+        }
+
+        /* img:hover {
+            width: 80%;
+            height: 600px;
+        } */
+
+        /* .card-container {
+            display: flex;
+        } */
+        .blur {
+            filter: blur(5px);
+        }
+
+        @keyframes animationBg {
+            from {
+                width: 100px;
+                height: 100px;
+            }
+
+            to {
+                width: 80%;
+                height: 600px;
+            }
+        }
+    </style>
+    <!-- <div class="container">
+        test
+    </div> -->
+    <h1>Lembaga Pelatihan <u class="text-black">Resmi</u></h1>
+    <!-- <button id="daftar" class="brown-box text-black">Daftar</button>
+    <button id="masuk" class="brown-box" disabled>Masuk</button>
+    <div class="sub-container">Log in</div> -->
+    <div class="card-container">
+        <img class="blur" src="https://cdn.pixabay.com/photo/2023/04/13/22/20/hd-wallpaper-7923541_1280.jpg" />
+        <div class="card">
+            Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam
+            meningkatkan
+            karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan
+            lisensi
+            profesi.
+        </div>
+        <div class="card">
+            Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam
+            meningkatkan
+            karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan
+            lisensi
+            profesi.Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia
+            dalam
+            meningkatkan
+            karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan
+            lisensi
+            profesi.Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia
+            dalam
+            meningkatkan
+            karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan
+            lisensi
+            profesi.
+        </div>
+    </div>
+
+</body>
+
+</html>

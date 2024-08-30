@@ -1,0 +1,49 @@
+.field {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.cash {
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+
+.lunas {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 40px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 30px;
+    font-size: 20px;
+    display: none;
+}
